@@ -1,0 +1,252 @@
+@import "tailwindcss";
+
+/* Custom CSS for Glassmorphism, Neumorphism, and Cursor Effects */
+
+/* Custom Properties for consistent theming */
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  --neumorphism-light: #2a2a2a;
+  --neumorphism-dark: #1a1a1a;
+  --neumorphism-shadow: 20px 20px 60px #1a1a1a, -20px -20px 60px #2a2a2a;
+  --neumorphism-inset: inset 20px 20px 60px #1a1a1a, inset -20px -20px 60px #2a2a2a;
+}
+
+/* Glassmorphism Effects */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.2);
+}
+
+/* Neumorphism Effects */
+.neumorphism {
+  background: var(--neumorphism-light);
+  box-shadow: var(--neumorphism-shadow);
+  border-radius: 20px;
+}
+
+.neumorphism-inset {
+  background: var(--neumorphism-light);
+  box-shadow: var(--neumorphism-inset);
+  border-radius: 20px;
+}
+
+.neumorphism-button {
+  background: var(--neumorphism-light);
+  box-shadow: var(--neumorphism-shadow);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.neumorphism-button:hover {
+  box-shadow: var(--neumorphism-inset);
+  transform: translateY(2px);
+}
+
+.neumorphism-button:active {
+  box-shadow: var(--neumorphism-inset);
+  transform: translateY(4px);
+}
+
+/* Cursor Effects - Made extremely small and subtle */
+.custom-cursor {
+  position: fixed;
+  width: 3px;
+  height: 3px;
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease;
+  mix-blend-mode: difference;
+  opacity: 0.4;
+}
+
+.cursor-follower {
+  position: fixed;
+  width: 12px;
+  height: 12px;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(1px);
+  opacity: 0.3;
+}
+
+/* Page Transitions */
+.page-transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-transition.transitioning {
+  pointer-events: none;
+}
+
+/* Scroll Animations */
+.scroll-animation {
+  will-change: transform, opacity;
+}
+
+/* Hover Effects - More subtle */
+.hover-lift {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.hover-glow {
+  transition: all 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+  transform: scale(1.01);
+}
+
+.hover-border-glow {
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.hover-border-glow:hover {
+  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.2);
+}
+
+/* Interactive Elements */
+.interactive-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.interactive-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+  transition: left 0.5s ease;
+}
+
+.interactive-card:hover::before {
+  left: 100%;
+}
+
+/* Floating Animation - More subtle */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Pulse Animation - More subtle */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 15px rgba(59, 130, 246, 0.2); }
+  50% { box-shadow: 0 0 25px rgba(59, 130, 246, 0.4); }
+}
+
+.pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 4s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #2563eb, #7c3aed);
+}
+
+/* Professional Loading Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .custom-cursor,
+  .cursor-follower {
+    display: none;
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-2px);
+  }
+  
+  .hover-glow:hover {
+    transform: scale(1.005);
+  }
+}
