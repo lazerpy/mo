@@ -43,22 +43,27 @@ const projects = [
     live: "https://forever-site-ruby.vercel.app/",
   },
   {
-    title: "Blog Platform",
-    subtitle: "MERN stack blog with markdown support",
+    title: "Task Manager ",
+    subtitle: "Sleek Ul Task Manager for Freelancers , managers , Studens, etc",
     image: "https://placehold.co/600x320?text=Blog+Platform+Mockup",
-    tech: ["React", "Node.js", "MongoDB", "TailwindCSS"],
-    techIcons: [<FaReact />, <FaNodeJs />, <SiMongodb />, <SiTailwindcss />],
+    tech: ["Html", "Css", "JavaScrip"],
+    techIcons: [<FaCss />, <FaHtml />, <FaJavascript />, <SiTailwindcss />],
     badges: ["Markdown", "Auth", "SEO"],
     role: "Frontend Developer",
-    overview: "A full-featured blog platform with markdown posts, authentication, and SEO.",
+    overview: "A web app to create, organize, and track tasks efficiently. Helps users manage daily goals, deadlines, and productivity..",
     highlights: [
-      "📝 Markdown editor",
-      "🔒 Auth & protected routes",
-      "🚀 SEO optimized",
-      "📊 Dashboard analytics",
+    
+
+"🧠 Smart Task Sorting",
+
+"📦 CRUD Functional",
+
+"🔔 Deadline Reminders"
+
+"💾 Local/Cloud Storage",
     ],
-    github: "https://github.com/yourusername/blog-platform",
-    live: "https://blog-demo.com",
+    github: "https://github.com/lazerpy/Task-manager-",
+    live: "https://lazerpy.github.io/Task-manager-/",
   },
 ];
 
