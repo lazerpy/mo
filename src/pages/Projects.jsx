@@ -2,30 +2,32 @@ import React from "react";
 import { FaReact, FaGithub, FaExternalLinkAlt, FaHtml5, FaCss3Alt, FaJs, FaNodeJs, FaDatabase } from "react-icons/fa";
 import { SiTailwindcss, SiMongodb, SiRedux } from "react-icons/si";
 import { Link } from "react-router-dom";
+import portfolio from "../assets/2.png";
+import ecommerce from "../assets/1.png";
 
 const projects = [
   {
-    title: "Portfolio Website",
-    subtitle: "Personal portfolio built with React & Tailwind",
-    image: "https://placehold.co/600x320?text=Portfolio+Mockup",
+    title: "Cyber Security Website",
+    subtitle: "Cyber Security Website built with React & Tailwind",
+    image: portfolio,
     tech: ["React", "TailwindCSS", "Vite"],
     techIcons: [<FaReact />, <SiTailwindcss />, <FaJs />],
     badges: ["Responsive", "Fast", "Modern UI"],
     role: "Frontend Developer",
-    overview: "A sleek, fast, and fully responsive portfolio to showcase my work and skills.",
+    overview: "A Cyber Security Website built with React & Tailwind. It is a website that allows you to scan your website for vulnerabilities and security issues.",
     highlights: [
       "⚡ Blazing fast load times with Vite",
       "📱 Fully responsive for all devices",
       "🎨 Deep custom design with animations",
-      "🌙 Dark mode support",
+      "🌙 Scan simulator support",
     ],
-    github: "https://github.com/yourusername/portfolio",
-    live: "https://yourportfolio.com",
+    github: "https://github.com/lazerpy/cyber",
+    live: "https://csguard.vercel.app/",
   },
   {
     title: "E-Commerce Store",
     subtitle: "Full-featured online shop UI",
-    image: "https://placehold.co/600x320?text=E-Commerce+Mockup",
+    image: ecommerce,
     tech: ["React", "Redux", "TailwindCSS"],
     techIcons: [<FaReact />, <SiRedux />, <SiTailwindcss />],
     badges: ["Cart", "Animations", "Filter"],
@@ -37,8 +39,8 @@ const projects = [
       "💡 Animated transitions",
       "⚙️ Modular component structure",
     ],
-    github: "https://github.com/yourusername/ecommerce-ui",
-    live: "https://ecommerce-demo.com",
+    github: "https://github.com/lazerpy/foreverSite",
+    live: "https://forever-site-ruby.vercel.app/",
   },
   {
     title: "Blog Platform",
