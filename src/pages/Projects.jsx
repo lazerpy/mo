@@ -58,7 +58,7 @@ const projects = [
 
 "📦 CRUD Functional",
 
-"🔔 Deadline Reminders"
+"🔔 Deadline Reminders",
 
 "💾 Local/Cloud Storage",
     ],
