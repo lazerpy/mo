@@ -47,7 +47,7 @@ const projects = [
     subtitle: "Sleek Ul Task Manager for Freelancers , managers , Studens, etc",
     image: "https://pin.it/1sQA1RMkT",
     tech: ["Html", "Css", "JavaScrip"],
-    techIcons: [<FaCss />, <FaHtml />, <FaJavascript />, <SiTailwindcss />],
+    techIcons: [<FaCss3Alt/>, <FaHtml5 />, <FaJs />, <SiTailwindcss />],
     badges: ["Markdown", "Auth", "SEO"],
     role: "Frontend Developer",
     overview: "A web app to create, organize, and track tasks efficiently. Helps users manage daily goals, deadlines, and productivity..",
