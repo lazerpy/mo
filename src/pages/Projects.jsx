@@ -45,7 +45,7 @@ const projects = [
   {
     title: "Task Manager ",
     subtitle: "Sleek Ul Task Manager for Freelancers , managers , Studens, etc",
-    image: "https://placehold.co/600x320?text=Blog+Platform+Mockup",
+    image: "https://pin.it/1sQA1RMkT",
     tech: ["Html", "Css", "JavaScrip"],
     techIcons: [<FaCss />, <FaHtml />, <FaJavascript />, <SiTailwindcss />],
     badges: ["Markdown", "Auth", "SEO"],
