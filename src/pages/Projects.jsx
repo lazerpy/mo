@@ -45,7 +45,7 @@ const projects = [
   {
     title: "Task Manager ",
     subtitle: "Sleek Ul Task Manager for Freelancers , managers , Studens, etc",
-    image: "https://pin.it/yVtHFfcRG",
+    image: "https://pin.it/5OgXLUs3P",
     tech: ["Html", "Css", "JavaScrip"],
     techIcons: [<FaCss3Alt/>, <FaHtml5 />, <FaJs />, <SiTailwindcss />],
     badges: ["Markdown", "Auth", "SEO"],
