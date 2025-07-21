@@ -31,11 +31,11 @@ const Contact = () => {
           <ul className="space-y-2">
             <li className="flex items-center gap-3 text-gray-200 hover:text-blue-400 transition-colors hover-glow">
               <FaEnvelope className="text-blue-400 text-xl" />
-              <a href="mailto:wizzdev@example.com" className="hover:underline">wizzdev@example.com</a>
+              <a href="mailto:wizzdev@example.com" className="hover:underline">mobarre001@gmail.com</a>
             </li>
             <li className="flex items-center gap-3 text-gray-200 hover:text-gray-100 transition-colors hover-glow">
               <FaGithub className="text-gray-300 text-xl" />
-              <a href="https://github.com/wizz" target="_blank" rel="noopener noreferrer" className="hover:underline">github.com/wizz</a>
+              <a href="https://github.com/lazerby" target="_blank" rel="noopener noreferrer" className="hover:underline">github.com/wizz</a>
             </li>
             <li className="flex items-center gap-3 text-gray-200 hover:text-blue-300 transition-colors hover-glow">
               <FaLinkedin className="text-blue-500 text-xl" />
